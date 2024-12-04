@@ -118,9 +118,8 @@ const inventors = [
   //-----------------------------------------------------------------------------------------------
 
 
-  let sortedByBirthYear = inventors.sort((sorted)=>{
-    return `first: ${sorted.first}  last: ${sorted.last}
-    year: ${sorted.year} passed: ${sorted.passed}`  
+  let sortedByBirthYear = inventors.sort((a,b)=>{
+    return a.year - b.year
   })
 
   console.log('Exercise 3 my result: ', sortedByBirthYear);
